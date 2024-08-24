@@ -7,6 +7,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <form>
+        <h1>Feedback Survey Form</h1>
+        <div class="name-part">
+            <label>Name:</label>
+            <input>
+        </div>
+        <div class="email-part">
+            <label>Email:</label>
+            <input>
+        </div>
+        <div class="age-part">
+            <label>Age:</label>
+            <input type="number" min="1" max="150">
+        </div>
+        <div class="feedback-part">
+            <label>Type of Feedback:</label>
+            <!-- select element is like a dropdown bar -->
+            <select name="feedback" id="feedback">
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+                <option value="suggestion">Suggestion</option>
+            </select>
+        </div>
+        <div class="services-used">
+            <h5>Services Used:</h5>
+            <ul>
+                <li><input type="checkbox"> Service 1</li>
+                <li><input type="checkbox"> Service 2</li>
+                <li><input type="checkbox"> Service 3</li>
+            </ul>
+        </div>
+        <div class="additional-comments">
+            <label>Additional Comments:</label>
+            <textarea></textarea>
+        </div>
+        <button>Submit Feedback</button>
+    </form>
 </body>
 </html>
